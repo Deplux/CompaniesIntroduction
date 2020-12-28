@@ -2,11 +2,19 @@
   height: 100vh;
   background-color: white;
   width: 100%;
+  overflow-x:hidden;
+}
+
+.TopCard{
+  width:100vw;
+  height:100vh;
+  background-color:white;
+  display:flex;
 }
 
 .TopUI {
   width: 100%;
-  height: 30vh;
+  height: calc(10vw + 250px);
   background-color: #5000ca;
   display: flex;
 }
@@ -26,6 +34,24 @@
   margin-left: 10vh;
   padding-top: 10vh;
   font-size: 80px;
+}
+
+.mainTitle {
+  color: #5000ca;
+  padding: 0;
+  margin:0;
+  margin-left: 6vh;
+  padding-top: 8vh;
+  font-size: 8vh;
+}
+
+.mainSubTitle {
+  color: dark;
+  padding: 0;
+  margin:0;
+  margin-left: 10vh;
+  padding-top: 10vh;
+  font-size: 26px;
 }
 
 .secondText {
@@ -56,17 +82,20 @@
   margin-left: auto;
 }
 
-.depluxLink {
+.Summary {
   color:white;
   margin-left: 10vh;
   font-size: 22px;
+  margin-top:10px;
 }
 
-.minepluxLink {
+.Summary_Blk {
   color:black;
   margin-left: 10vh;
   font-size: 22px;
+  margin-top:10px;
 }
+
 
 .wave3 {
   margin-top:3;

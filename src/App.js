@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-const Wave = () => {
+const Wave_Pluxcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -12,6 +12,19 @@ const Wave = () => {
     </svg>
   );
 };
+
+const Wave_Main = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#5000ca"
+        fillOpacity="1"
+        d="M0,192L48,186.7C96,181,192,171,288,154.7C384,139,480,117,576,96C672,75,768,53,864,80C960,107,1056,181,1152,202.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+  );
+};
+
 const Triangle = ({ style }) => {
   return (
     <svg
@@ -42,28 +55,30 @@ const Blob = () => {
 export default function WaveTwo() {
   return (
     <div className="entireUI">
+      <div className="TopCard">
+        <h1 className="mainTitle">
+          Pluxcon Network
+        </h1>
+
+      </div>
       <div className="TopUI">
         <div>
           <h1 className="mainText">
-            PLUX
-            <br />
-            CON
+            Deplux.io
           </h1>
-          <p className="depluxLink">pluxcon.net</p>
+          <p className="Summary">웹호스팅 플랫폼</p>
         </div>
         <div className="mainLogo"></div>
       </div>
       <div>
-        <Wave />
+        <Wave_Pluxcon />
       </div>
       <div className="middleUI">
         <div>
           <h1 className="secondText">
-            MINE
-            <br />
-            PLUX
+            Plucon
           </h1>
-          <p className="minepluxLink">mineplux.io</p>
+          <p className="Summary_Blk">게임서버 호스팅 플랫폼</p>
         </div>
         <div className="mainLogo2"></div>
       </div>
@@ -71,11 +86,9 @@ export default function WaveTwo() {
       <div className="TopUI">
         <div>
           <h1 className="mainText">
-            AD
-            <br />
-            301
+            AD301
           </h1>
-          <p className="depluxLink">ad301.com</p>
+          <p className="Summary">Advertising Platform for Discord</p>
         </div>
         <div className="mainLogo"></div>
       </div>
